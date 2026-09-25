@@ -1,3 +1,4 @@
+```tsx
 import { Phone, Mail, CreditCard, Clock, ArrowUpRight } from "lucide-react";
 import { PageHero } from "../components/PageHero";
 import { ContactForm } from "../components/ContactForm";
@@ -168,3 +169,8 @@ export default function Contact() {
     </>
   );
 }
+```
+
+Ab **Email card par click karne se visitor ka default mail app open hoga** aur `webproxysolutions@gmail.com` automatically recipient mein aa jayega.
+
+**Lekin:** Contact form ke andar jo visitor message submit karega, woh abhi automatically Gmail par nahi bheja jayega. Uske liye `ContactForm.tsx` mein email-sending setup karna hoga.
